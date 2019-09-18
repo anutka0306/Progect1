@@ -2,12 +2,16 @@ Vue.component('products',{
   data(){
     return {
       products: [],
+      filtered: [],
       imgCatalog: 'https://placehold.it/200x150',
     }
   },
 
   methods: {
-
+      filter(value){
+        let regExp = new RegExp(value, 'i');
+        this.filtered = this.products.filter(el => regExp.test(el.product_name));
+      }
   },
 
   mounted(){
@@ -15,14 +19,15 @@ Vue.component('products',{
     .then(data => {
       for(let el of data){
         this.products.push(el);
+        this.filtered.push(el);
       }
     });
     //console.log(this);
-    //console.log(this.products);
+    console.log(this.filtered);
   },
 
   template:`<div class="fetured__content container flex-between">
-  <product v-for="item of products" :key="item.id_product" :img="imgCatalog" :product="item">
+  <product v-for="item of filtered" :key="item.id_product" :img="imgCatalog" :product="item">
   </product>
   </div>`
 
