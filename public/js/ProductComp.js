@@ -26,9 +26,18 @@ Vue.component('products',{
     console.log(this.filtered);
   },
 
-  template:`<div class="fetured__content container flex-between">
+  template:`<div class="fetured">
+  <div class="fetured__title">
+     <h3 class="fetured__h3">Fetured Items</h3>
+     <p class="fetured__description">Shop for items based on what we featured in this week</p>
+  </div>
+  <div class="fetured__content container flex-between">
   <product v-for="item of filtered" :key="item.id_product" :img="imgCatalog" :product="item">
   </product>
+  </div>
+  <div class="fetured__button container">
+      <a href="#" class="button">Browse All Product</a>
+  </div>
   </div>`
 
 });
