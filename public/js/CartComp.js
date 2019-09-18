@@ -12,12 +12,12 @@ Vue.component('cart',{
     addProduct(product){
       let find = this.cartItems.find(el => el.id_product === product.id_product);
       if(find){
-        this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: 1});
+        this.$root.putJson(`/api/cart/${find.id_product}`, {quantity: 1});
         find.quantity++;
         this.totalSum += find.price;
       }else{
         let prod = Object.assign({quantity: 1}, product);
-        this.$parent.postJson('/api/cart', prod)
+        this.$root.postJson('/api/cart', prod)
         .then(data =>{
           if(data.result === 1){
             this.cartItems.push(prod);
@@ -32,7 +32,7 @@ Vue.component('cart',{
 remove(cartItem){
   //console.log(cartItem);
   let find = this.cartItems.find(el => el.id_product === cartItem.id_product);
-  this.$parent.deleteJson(`/api/cart/${find.id_product}`, {quantity: 1});
+  this.$root.deleteJson(`/api/cart/${find.id_product}`, {quantity: 1});
   if(cartItem.quantity == 1){
     this.cartItems.splice(this.cartItems.indexOf(cartItem), 1);
     this.totalSum -= cartItem.price;
@@ -47,7 +47,7 @@ remove(cartItem){
 
   mounted(){
     //this.$parent.getJson(`${API + this.cartUrl}`)
-    this.$parent.getJson(`/api/cart`)
+    this.$root.getJson(`/api/cart`)
     .then(data => {
       for(let el of data.contents){
         this.cartItems.push(el);

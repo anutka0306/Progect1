@@ -6,7 +6,7 @@ Vue.component('filter-el', {
   },
 
   template:`
-  <form action="#" class="header__form" @submit.prevent="$parent.$refs.products.filter(userSearch)">
+  <form action="#" class="header__form" @submit.prevent="$root.$refs.products.filter(userSearch)">
      <div class="header__browse"><a class="header__browse__link" href="#">Browse</a>
       <div class="browse__menu drop__browse-menu">
       <div class="drop__browse">
