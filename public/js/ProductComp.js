@@ -47,19 +47,19 @@ Vue.component('product',{
 
   data(){
     return{
-
+      productUrl: '/product/',
     };
   },
 
   template: `
   <div class="fetured__item">
       <div class="fetured__img"> <img :src="img" alt="Some alt"></div>
-      <a href="single-product.html"><h4 class="fetured__item__title">{{product.product_name}}</h4></a>
+      <a :href="productUrl + product.id_product"><h4 class="fetured__item__title">{{product.product_name}}</h4></a>
       <p class="fetured__item__price">$ {{product.price}}</p>
          <div class="fetured_hover">
          <a style="cursor:pointer">
              <div class="fetured__item__button">
-              <img src="img/cart-white.svg" alt="add to cart">
+              <img src="../img/cart-white.svg" alt="add to cart">
               <p class="fetured__item__button__text" @click="$root.$refs.cart.addProduct(product)">Add to Cart</p>
              </div>
            </a>

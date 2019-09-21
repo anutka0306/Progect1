@@ -9,16 +9,16 @@ Vue.component('footer-el', {
   <section class="subscribe-review__block">
       <div class="review">
           <figure class="review__block">
-              <img src="img/review-img.png" class="review__photo">
+              <img src="../img/review-img.png" class="review__photo">
               <figcaption class="review__text">
                   <p class="review__content">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
 a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
                   <p class="reviewer_name">Bin Burhan</p>
                   <p class="reviewer_location">Dhaka, Bd</p>
                   <div class="review__dots">
-                      <a href="#"><img class="review__dot" src="img/review-dots-grey.svg"></a>
-                      <a href="#"><img class="review__dot" src="img/review-dots-pink.svg"></a>
-                      <a href="#"><img class="review__dot" src="img/review-dots-grey.svg"></a>
+                      <a href="#"><img class="review__dot" src="../img/review-dots-grey.svg"></a>
+                      <a href="#"><img class="review__dot" src="../img/review-dots-pink.svg"></a>
+                      <a href="#"><img class="review__dot" src="../img/review-dots-grey.svg"></a>
                   </div>
               </figcaption>
           </figure>
@@ -39,7 +39,7 @@ a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”<
           <div class="brand__content">
               <div class="footer__logo">
                   <a href="#" class="logo">
-                 <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="logo_d">D</span>
+                 <img class="logo__img" src="../img/logo.png" alt="logo">BRAN<span class="logo_d">D</span>
              </a>
               </div>
               <p class="footer__text">

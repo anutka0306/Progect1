@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Progect I-Shop</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/fbeb08ead3.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+
+    <header-el>
+      <filter-el slot="filter"></filter-el>
+      <cart slot="cart" ref="cart"></cart>
+    </header-el>
+
+      <nav-el></nav-el>
+      <div class="page-title__block">
+        <div class="container page__title">
+            <h1 class="page-title__h1">New Arrivals</h1>
+            <div class="breadcrumbs">
+                <a href="index.html" class="breadcrumbs__item">Home</a> / <a href="catalog.html" class="breadcrumbs__item">Men</a> / <a href="#" class="breadcrumbs__item_active">New Arrivals </a>
+            </div>
+        </div>
+    </div>
+    <div class="container flex-between catalog__block">
+        <aside class="catalog__filter_left">
+            <nav>
+                <div class="filter__list_left">
+                    <details class="filter__item_left" open="open"><summary class="filter__item_link">Category</summary>
+                        <ul class="filter__item-list">
+                            <li><a href="#" class="filter__item-list__link">Accessories</a></li>
+                            <li><a href="#" class="filter__item-list__link">Bags</a></li>
+                            <li><a href="#" class="filter__item-list__link">Denim</a></li>
+                            <li><a href="#" class="filter__item-list__link">Hoodies & Sweatshirts</a></li>
+                            <li><a href="#" class="filter__item-list__link">Jackets & Coats</a></li>
+                            <li><a href="#" class="filter__item-list__link">Pants</a></li>
+                            <li><a href="#" class="filter__item-list__link">Polos</a></li>
+                            <li><a href="#" class="filter__item-list__link">Shirts</a></li>
+                            <li><a href="#" class="filter__item-list__link">Shoes</a></li>
+                            <li><a href="#" class="filter__item-list__link">Shorts</a></li>
+                            <li><a href="#" class="filter__item-list__link">Sweaters & Knits</a></li>
+                            <li><a href="#" class="filter__item-list__link">T-Shirts</a></li>
+                            <li><a href="#" class="filter__item-list__link">Tanks</a></li>
+                        </ul>
+                    </details>
+                    <details class="filter__item_left"><summary href="#" class="filter__item_link">BRAND</summary>
+                        <ul class="filter__item-list">
+                            <li><a href="#" class="filter__item-list__link">Accessories</a></li>
+                            <li><a href="#" class="filter__item-list__link">Bags</a></li>
+                            <li><a href="#" class="filter__item-list__link">Denim</a></li>
+                            <li><a href="#" class="filter__item-list__link">Hoodies & Sweatshirts</a></li>
+                            <li><a href="#" class="filter__item-list__link">Jackets & Coats</a></li>
+                            <li><a href="#" class="filter__item-list__link">Pants</a></li>
+                            <li><a href="#" class="filter__item-list__link">Polos</a></li>
+                            <li><a href="#" class="filter__item-list__link">Shirts</a></li>
+                            <li><a href="#" class="filter__item-list__link">Shoes</a></li>
+                            <li><a href="#" class="filter__item-list__link">Shorts</a></li>
+                            <li><a href="#" class="filter__item-list__link">Sweaters & Knits</a></li>
+                            <li><a href="#" class="filter__item-list__link">T-Shirts</a></li>
+                            <li><a href="#" class="filter__item-list__link">Tanks</a></li>
+                        </ul>
+                    </details>
+                    <details class="filter__item_left"><summary href="#" class="filter__item_link">dESIGNER</summary>
+                        <ul class="filter__item-list">
+                            <li><a href="#" class="filter__item-list__link">Accessories</a></li>
+                            <li><a href="#" class="filter__item-list__link">Bags</a></li>
+                            <li><a href="#" class="filter__item-list__link">Denim</a></li>
+                            <li><a href="#" class="filter__item-list__link">Hoodies & Sweatshirts</a></li>
+                            <li><a href="#" class="filter__item-list__link">Jackets & Coats</a></li>
+                            <li><a href="#" class="filter__item-list__link">Pants</a></li>
+                            <li><a href="#" class="filter__item-list__link">Polos</a></li>
+                            <li><a href="#" class="filter__item-list__link">Shirts</a></li>
+                            <li><a href="#" class="filter__item-list__link">Shoes</a></li>
+                            <li><a href="#" class="filter__item-list__link">Shorts</a></li>
+                            <li><a href="#" class="filter__item-list__link">Sweaters & Knits</a></li>
+                            <li><a href="#" class="filter__item-list__link">T-Shirts</a></li>
+                            <li><a href="#" class="filter__item-list__link">Tanks</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </nav>
+        </aside>
+        <div class="catalog__content-block">
+            <div class="catalog__filter_center">
+                <div class="filter_center__item">
+                    <p class="filter_center__title">Trending now</p>
+                    <div class="trending-filter__block">
+                        <a href="#" class="trending-filter__item">Bohemian </a> |
+                        <a href="#" class="trending-filter__item"> Floral </a>    |
+                        <a href="#" class="trending-filter__item"> Lace </a>
+                        <a href="#" class="trending-filter__item"> Floral </a>    |
+                        <a href="#" class="trending-filter__item"> Lace </a>    |
+                        <a href="#" class="trending-filter__item"> Bohemian</a>
+                    </div>
+                </div>
+                <div class="filter_center__item">
+                     <p class="filter_center__title">Size</p>
+                     <div class="size-filter__block">
+                         <label class="size-filter__label"><input type="checkbox" class="size-filter__item"> XXS</label>
+                         <label class="size-filter__label"><input type="checkbox" class="size-filter__item"> XS</label>
+                         <label class="size-filter__label"><input type="checkbox" class="size-filter__item"> S</label>
+                         <label class="size-filter__label"><input type="checkbox" class="size-filter__item"> M</label>
+                         <label class="size-filter__label"><input type="checkbox" class="size-filter__item"> L</label>
+                         <label class="size-filter__label"><input type="checkbox" class="size-filter__item"> XL</label>
+                         <label class="size-filter__label"><input type="checkbox" class="size-filter__item"> XXL</label>
+                     </div>
+                </div>
+                <div class="filter_center__item">
+                     <p class="filter_center__title">pRICE</p>
+                     <div class="price-filter__block">
+                         <input type="range" class="price-filter__progress" value="100" min="10" max="400" step="10">
+                         <div class="price-filer__values">
+                             <p>$52</p>
+                             <p>$400</p>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div class="sort__block">
+               <form class="sort__block__form" action="">
+               <input type="submit" value="Sort By" class="sort__button">
+               <div class="sort__select_arrow"><select class="sort__select">
+                   <option>Name</option>
+                   <option>Price</option>
+                   <option>Date</option>
+                   </select></div>
+               </form>
+               <form class="sort__block__form" action="">
+               <input type="text" value="Show" class="sort__button">
+               <div class="sort__select_arrow"><select class="sort__select">
+                   <option>9</option>
+                   <option>18</option>
+                   <option>36</option>
+                   </select></div>
+               </form>
+            </div>
+            <catalog-products ref="products"></catalog-products>
+        </div>
+    </div>
+    <section class="advantage__block">
+        <div class="container advatage__list">
+       <div class="advantage__item">
+            <img src="img/car-icon.svg" alt="delivery" class="advantage__image">
+                <div class="advantage__item__description">
+                    <h3 class="advantage__h3">Free Delivery</h3>
+                    <p class="advantage__p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+        </div>
+
+        <div class="advantage__item">
+            <img src="img/sale-icon.svg" alt="delivery" class="advantage__image">
+                <div class="advantage__item__description">
+                    <h3 class="advantage__h3">Sales & discounts</h3>
+                    <p class="advantage__p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+        </div>
+        <div class="advantage__item">
+             <img src="img/quality-icon.svg" alt="delivery" class="advantage__image">
+                <div class="advantage__item__description">
+                    <h3 class="advantage__h3">Quality assurance</h3>
+                    <p class="advantage__p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+        </div>
+            </div>
+    </section>
+      <footer-el></footer-el>
+
+  </div>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script type="text/javascript" src="js/CatalogProductComp.js"></script>
+  <script type="text/javascript" src="js/NavComp.js"></script>
+  <script type="text/javascript" src="js/CartComp.js"></script>
+  <script type="text/javascript" src="js/FilterComp.js"></script>
+  <script type="text/javascript" src="js/HeaderComp.js"></script>
+  <script type="text/javascript" src="js/FooterComp.js"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
