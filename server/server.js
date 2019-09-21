@@ -3,6 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const cartRouter = require('./cartRouter');
 const app = express();
+app.set('views', path.join(__dirname, '../public', 'views'));
+app.set('view-engine', 'ejs');
 
 app.use(express.json());
 app.use('/', express.static('./public'));
@@ -22,7 +24,11 @@ app.get('/api/products', (req, res) => {
 
 app.get('/catalog', (req, res) => {
 res.sendFile(path.join(__dirname, '../public', 'catalog.html'));
+});
 
+app.get('/product/:id', (req, res) =>{
+  //res.send("Id is - " + req.params.id);
+  res.render('product.ejs', {prodId: req.params.id});
 });
 
 

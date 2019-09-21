@@ -8,8 +8,8 @@ Vue.component('header-el',{
   <header class="header">
          <div class="container flex-between">
              <div class="header__item">
-                 <a href="index.html" class="logo">
-                     <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="logo_d">D</span>
+                 <a href="/" class="logo">
+                     <img class="logo__img" src="../img/logo.png" alt="logo">BRAN<span class="logo_d">D</span>
                  </a>
                  <slot name="filter"></slot>
              </div>

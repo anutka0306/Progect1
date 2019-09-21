@@ -60,7 +60,7 @@ remove(cartItem){
   },
 
   template: `
-  <div class="cart__drop__menu"><a href="cart.html" alt="cart"><img class="cart__img" src="img/cart.svg" alt="cart"></a>
+  <div class="cart__drop__menu"><a href="cart.html" alt="cart"><img class="cart__img" src="../img/cart.svg" alt="cart"></a>
       <div class="cart__menu" style="left:-40px">
         <cart-item
         v-for="item of cartItems"
