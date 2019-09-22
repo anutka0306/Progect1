@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Progect I-Shop</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/fbeb08ead3.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+
+    <header-el>
+      <filter-el slot="filter"></filter-el>
+      <cart slot="cart" ref="cart"></cart>
+    </header-el>
+
+      <nav-el></nav-el>
+      <div class="page-title__block">
+        <div class="container page__title">
+            <h1 class="page-title__h1">New Arrivals</h1>
+            <div class="breadcrumbs">
+                <a href="index.html" class="breadcrumbs__item">Home</a> / <a href="catalog.html" class="breadcrumbs__item">Men</a> / <a href="#" class="breadcrumbs__item_active">New Arrivals </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart container">
+        <div class="cart__list">
+            <div class="cart__item cart__table-titles">
+                <div class="cart__product-details">Product Details</div>
+                <div class="cart__unite-price">unite Price</div>
+                <div class="cart__quantity">Quantity</div>
+                <div class="cart__shipping">shipping</div>
+                <div class="cart__subtotal-price">Subtotal</div>
+                <div class="cart__action_del">ACTION</div>
+            </div>
+            <div class="cart__item cart__product">
+                <div class="cart__product-details">
+                    <img src="img/cart-good01.jpg" alt="cart good" class="cart__product-details-img">
+                    <div class="cart__product-details-content">
+                        <a href="single-product.html"> <h4 class="cart__product-details-title">Mango  People  T-shirt</h4></a>
+                        <p class="cart__product-details-params"><strong>Color: </strong>Red</p>
+                        <p class="cart__product-details-params"><strong>Size: </strong>Xll</p>
+                    </div>
+                </div>
+                <div class="cart__unite-price cart-font">$150</div>
+                <div class="cart__quantity"><input type="number" class="cart__quantity-input cart-font" value="2"></div>
+                <div class="cart__shipping cart-font">FREE</div>
+                <div class="cart__subtotal-price cart-font">$300</div>
+                <div class="cart__action_del"><i class="fas fa-minus-square cart__icon_del"></i></div>
+            </div>
+
+            <div class="cart__item cart__product">
+                <div class="cart__product-details">
+                    <img src="img/cart-good2.jpg" alt="cart good" class="cart__product-details-img">
+                    <div class="cart__product-details-content">
+                        <a href="single-product.html"> <h4 class="cart__product-details-title">Mango  People  T-shirt</h4></a>
+                        <p class="cart__product-details-params"><strong>Color: </strong>Red</p>
+                        <p class="cart__product-details-params"><strong>Size: </strong>Xll</p>
+                    </div>
+                </div>
+                <div class="cart__unite-price cart-font">$150</div>
+                <div class="cart__quantity"><input type="number" class="cart__quantity-input cart-font" value="2"></div>
+                <div class="cart__shipping cart-font">FREE</div>
+                <div class="cart__subtotal-price cart-font">$300</div>
+                <div class="cart__action_del"><i class="fas fa-minus-square cart__icon_del"></i></div>
+            </div>
+
+            <div class="cart__item cart__product">
+                <div class="cart__product-details">
+                    <img src="img/cart-good3.jpg" alt="cart good" class="cart__product-details-img">
+                    <div class="cart__product-details-content">
+                        <a href="single-product.html"> <h4 class="cart__product-details-title">Mango  People  T-shirt</h4></a>
+                        <p class="cart__product-details-params"><strong>Color: </strong>Red</p>
+                        <p class="cart__product-details-params"><strong>Size: </strong>Xll</p>
+                    </div>
+                </div>
+                <div class="cart__unite-price cart-font">$150</div>
+                <div class="cart__quantity"><input type="number" class="cart__quantity-input cart-font" value="2"></div>
+                <div class="cart__shipping cart-font">FREE</div>
+                <div class="cart__subtotal-price cart-font">$300</div>
+                <div class="cart__action_del"><i class="fas fa-minus-square cart__icon_del"></i></div>
+            </div>
+            <div class="cart__item cart__buttons-block">
+                <a href="#" class="cart__clear-button cart__buttons-block-item">clear shopping cart</a>
+                <a href="#" class="cart__shopping-button cart__buttons-block-item">continue shoppping</a>
+            </div>
+        </div>
+        <div class="cart__checkout">
+            <div class="cart__delivery cart__checkout-item">
+                <h4 class="cart__checkout-title">Shipping Adress</h4>
+                <form action="#" class="cart__checkout-form">
+                    <input list="countries" placeholder="Bangladesh" class="cart__checkout-form-input">
+                    <datalist id="countries">
+                        <option value="Bangladesh"></option>
+                        <option value="Russia"></option>
+                        <option value="Italy"></option>
+                        <option value="Spain"></option>
+                        <option value="Mexico"></option>
+                    </datalist>
+                    <input class="cart__checkout-form-input" placeholder="State">
+                    <input class="cart__checkout-form-input" placeholder="Postcode/Zip">
+                    <button class="cart__checkout-form-button">get a quote</button>
+                </form>
+            </div>
+            <div class="cart__discount cart__checkout-item">
+                <h4 class="cart__checkout-title">coupon  discount</h4>
+                <p class="cart__checkout-text">Enter your coupon code if you have one</p>
+                <form action="#" class="cart__checkout-form">
+                    <input class="cart__checkout-form-input" placeholder="State">
+                    <button class="cart__checkout-form-button">Apply coupon</button>
+                </form>
+            </div>
+            <div class="cart__total-checkout cart__checkout-item">
+                <div class="cart__checkout-price">
+                    <p class="cart__checkout-subtotal">Sub total  <span class="cart__checkout-subtotal_span">$900</span> </p>
+                    <p class="cart__checkout-grandtotal">GRAND TOTAL <span class="cart__checkout-grandtotal_pink">$900</span></p>
+                </div>
+                    <button class="cart__grandtotal-button">proceed to checkout</button>
+
+            </div>
+        </div>
+    </div>
+
+      <footer-el></footer-el>
+
+  </div>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script type="text/javascript" src="js/NavComp.js"></script>
+  <script type="text/javascript" src="js/CartComp.js"></script>
+  <script type="text/javascript" src="js/FilterComp.js"></script>
+  <script type="text/javascript" src="js/HeaderComp.js"></script>
+  <script type="text/javascript" src="js/FooterComp.js"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

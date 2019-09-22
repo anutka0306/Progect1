@@ -24,16 +24,8 @@ Vue.component('single-product',{
         console.log(el.id_product);
         this.singleProduct = el;
       }
-      //console.log(el.id_product);
     }
   });
-  //this.singleProduct = this.products.find(el => el.id_product == '124');
-  for(product of this.products){
-    console.log(product);
-  }
-  //console.log(this.products);
-  //console.log(this.productId);
-  console.log(this.singleProduct);
   },
 
   template: `
@@ -118,10 +110,6 @@ Vue.component('single-product',{
           </div>
       </div>
   </div>
-
-<h1>{{this.singleProduct}}</h1>
-<p>{{this.singleProduct.product_name}}</p>
-<p>{{this.singleProduct.price}}</p>
 </div>
   `
 });

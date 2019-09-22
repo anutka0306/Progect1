@@ -31,6 +31,10 @@ app.get('/product/:id', (req, res) =>{
   res.render('product.ejs', {prodId: req.params.id});
 });
 
+app.get('/cart', (req, res) => {
+res.sendFile(path.join(__dirname, '../public', 'cart.html'));
+});
+
 
 app.listen(3001, function () {
   console.log('Example app listening on port 3001!');

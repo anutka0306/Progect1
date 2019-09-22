@@ -76,7 +76,7 @@ remove(cartItem){
                        <a href="checkout.html"><button class="cart__button_checkout">
                            Checkout
                        </button></a>
-                       <a href="cart.html"><button class="cart__button_go-to-cart">
+                       <a href="/cart"><button class="cart__button_go-to-cart">
                            go to cart
                        </button></a>
       </div>
