@@ -16,7 +16,7 @@
 
     <header-el>
       <filter-el slot="filter"></filter-el>
-      <cart slot="cart" ref="cart"></cart>
+      <cart slot="cart" ref="cart" :type=1></cart>
     </header-el>
 
       <nav-el></nav-el>
@@ -30,101 +30,8 @@
     </div>
 
     <div class="cart container">
-        <div class="cart__list">
-            <div class="cart__item cart__table-titles">
-                <div class="cart__product-details">Product Details</div>
-                <div class="cart__unite-price">unite Price</div>
-                <div class="cart__quantity">Quantity</div>
-                <div class="cart__shipping">shipping</div>
-                <div class="cart__subtotal-price">Subtotal</div>
-                <div class="cart__action_del">ACTION</div>
-            </div>
-            <div class="cart__item cart__product">
-                <div class="cart__product-details">
-                    <img src="img/cart-good01.jpg" alt="cart good" class="cart__product-details-img">
-                    <div class="cart__product-details-content">
-                        <a href="single-product.html"> <h4 class="cart__product-details-title">Mango  People  T-shirt</h4></a>
-                        <p class="cart__product-details-params"><strong>Color: </strong>Red</p>
-                        <p class="cart__product-details-params"><strong>Size: </strong>Xll</p>
-                    </div>
-                </div>
-                <div class="cart__unite-price cart-font">$150</div>
-                <div class="cart__quantity"><input type="number" class="cart__quantity-input cart-font" value="2"></div>
-                <div class="cart__shipping cart-font">FREE</div>
-                <div class="cart__subtotal-price cart-font">$300</div>
-                <div class="cart__action_del"><i class="fas fa-minus-square cart__icon_del"></i></div>
-            </div>
-
-            <div class="cart__item cart__product">
-                <div class="cart__product-details">
-                    <img src="img/cart-good2.jpg" alt="cart good" class="cart__product-details-img">
-                    <div class="cart__product-details-content">
-                        <a href="single-product.html"> <h4 class="cart__product-details-title">Mango  People  T-shirt</h4></a>
-                        <p class="cart__product-details-params"><strong>Color: </strong>Red</p>
-                        <p class="cart__product-details-params"><strong>Size: </strong>Xll</p>
-                    </div>
-                </div>
-                <div class="cart__unite-price cart-font">$150</div>
-                <div class="cart__quantity"><input type="number" class="cart__quantity-input cart-font" value="2"></div>
-                <div class="cart__shipping cart-font">FREE</div>
-                <div class="cart__subtotal-price cart-font">$300</div>
-                <div class="cart__action_del"><i class="fas fa-minus-square cart__icon_del"></i></div>
-            </div>
-
-            <div class="cart__item cart__product">
-                <div class="cart__product-details">
-                    <img src="img/cart-good3.jpg" alt="cart good" class="cart__product-details-img">
-                    <div class="cart__product-details-content">
-                        <a href="single-product.html"> <h4 class="cart__product-details-title">Mango  People  T-shirt</h4></a>
-                        <p class="cart__product-details-params"><strong>Color: </strong>Red</p>
-                        <p class="cart__product-details-params"><strong>Size: </strong>Xll</p>
-                    </div>
-                </div>
-                <div class="cart__unite-price cart-font">$150</div>
-                <div class="cart__quantity"><input type="number" class="cart__quantity-input cart-font" value="2"></div>
-                <div class="cart__shipping cart-font">FREE</div>
-                <div class="cart__subtotal-price cart-font">$300</div>
-                <div class="cart__action_del"><i class="fas fa-minus-square cart__icon_del"></i></div>
-            </div>
-            <div class="cart__item cart__buttons-block">
-                <a href="#" class="cart__clear-button cart__buttons-block-item">clear shopping cart</a>
-                <a href="#" class="cart__shopping-button cart__buttons-block-item">continue shoppping</a>
-            </div>
-        </div>
-        <div class="cart__checkout">
-            <div class="cart__delivery cart__checkout-item">
-                <h4 class="cart__checkout-title">Shipping Adress</h4>
-                <form action="#" class="cart__checkout-form">
-                    <input list="countries" placeholder="Bangladesh" class="cart__checkout-form-input">
-                    <datalist id="countries">
-                        <option value="Bangladesh"></option>
-                        <option value="Russia"></option>
-                        <option value="Italy"></option>
-                        <option value="Spain"></option>
-                        <option value="Mexico"></option>
-                    </datalist>
-                    <input class="cart__checkout-form-input" placeholder="State">
-                    <input class="cart__checkout-form-input" placeholder="Postcode/Zip">
-                    <button class="cart__checkout-form-button">get a quote</button>
-                </form>
-            </div>
-            <div class="cart__discount cart__checkout-item">
-                <h4 class="cart__checkout-title">coupon  discount</h4>
-                <p class="cart__checkout-text">Enter your coupon code if you have one</p>
-                <form action="#" class="cart__checkout-form">
-                    <input class="cart__checkout-form-input" placeholder="State">
-                    <button class="cart__checkout-form-button">Apply coupon</button>
-                </form>
-            </div>
-            <div class="cart__total-checkout cart__checkout-item">
-                <div class="cart__checkout-price">
-                    <p class="cart__checkout-subtotal">Sub total  <span class="cart__checkout-subtotal_span">$900</span> </p>
-                    <p class="cart__checkout-grandtotal">GRAND TOTAL <span class="cart__checkout-grandtotal_pink">$900</span></p>
-                </div>
-                    <button class="cart__grandtotal-button">proceed to checkout</button>
-
-            </div>
-        </div>
+        <cart slot="cart" ref="cart2" :type=2></cart>
+        
     </div>
 
       <footer-el></footer-el>
