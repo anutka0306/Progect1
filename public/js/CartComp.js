@@ -42,9 +42,16 @@ remove(cartItem){
   this.totalSum -= cartItem.price;
 }
 },
-updateCart(cart){
-  console.log(cart, cartItem);
-  cart.remove(cartItem);
+
+removeAll(cartItems){
+  console.log(cartItems);
+  this.$root.deleteJson(`api/cart`);
+  //for(let item of cartItems){
+    //let find = this.cartItems.find(el => el.id_product === item.id_product);
+    //this.$root.deleteJson(`/api/cart/${find.id_product}`, {quantity: item.quantity});
+  //}
+  //let find = this.cartItems.find(el => el.id_product === 457);
+  //this.$root.deleteJson(`/api/cart/${find.id_product}`, {quantity: 1});
 },
 
   },
@@ -58,15 +65,12 @@ updateCart(cart){
         this.totalSum += el.price * el.quantity;
       }
     });
-
-    //console.log(typeof(this.cartItems));
-    console.log(this.cartItems);
   },
 
   template: `
   <div>
   <div class="cart__drop__menu" v-if="type === 1">
-  <a href="cart.html" alt="cart"><img class="cart__img" src="../img/cart.svg" alt="cart"></a>
+  <a href="/cart" alt="cart"><img class="cart__img" src="../img/cart.svg" alt="cart"></a>
       <div class="cart__menu" style="left:-40px">
         <cart-item
         v-for="item of cartItems"
@@ -80,7 +84,7 @@ updateCart(cart){
                        <p>TOTAL	</p>
                         <p>$ {{totalSum}}</p>
                        </div>
-                       <a href="checkout.html"><button class="cart__button_checkout">
+                       <a href="/checkout"><button class="cart__button_checkout">
                            Checkout
                        </button></a>
                        <a href="/cart"><button class="cart__button_go-to-cart">
@@ -110,7 +114,7 @@ v-for="item of cartItems"
 </cart-item>
 
         <div class="cart__item cart__buttons-block">
-            <a href="#" class="cart__clear-button cart__buttons-block-item">clear shopping cart</a>
+            <a style="cursor:pointer" @click="removeAll(cartItems)" class="cart__clear-button cart__buttons-block-item">clear shopping cart</a>
             <a href="#" class="cart__shopping-button cart__buttons-block-item">continue shoppping</a>
         </div>
         <div class="cart__checkout">
@@ -167,8 +171,6 @@ data(){
 
     let find = this.$root.$refs.cart.cartItems.find(el => el.id_product === cartItem.id_product);
     let find1 = this.$root.$refs.cart2.cartItems.find(el => el.id_product === cartItem.id_product);
-    console.log(this.$root.$refs.cart2.cartItems.indexOf(cartItem));
-    console.log(this.$root.$refs.cart2.cartItems.indexOf(find1));
     if(this.$parent.$vnode.data.ref == 'cart'){
       if(find1.quantity == 1){
         this.$root.$refs.cart2.cartItems.splice(this.$root.$refs.cart2.cartItems.indexOf(find1),1);
@@ -179,9 +181,9 @@ data(){
     }else{
       if(find.quantity == 1){
         this.$root.$refs.cart.cartItems.splice(this.$root.$refs.cart.cartItems.indexOf(find),1);
-        this.$root.$refs.cart.totalSum -= cartItem.price;
       }else{
       find.quantity--;
+      this.$root.$refs.cart.totalSum -= cartItem.price;
     }
     }
 

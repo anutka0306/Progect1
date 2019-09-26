@@ -37,6 +37,10 @@ app.get('/cart', (req, res) => {
 res.sendFile(path.join(__dirname, '../public', 'cart.html'));
 });
 
+app.get('/checkout', (req, res) => {
+res.sendFile(path.join(__dirname, '../public', 'checkout.html'));
+});
+
 
 app.listen(3001, function () {
   console.log('Example app listening on port 3001!');

@@ -17,11 +17,18 @@ const remove = (cart, req) =>{
   const delIndex = cart.contents.indexOf(find);
   cart.contents.splice(delIndex, 1);
 }
+
   return JSON.stringify(cart, null, 4);
+};
+
+const removeAll = (cart, req) =>{
+ cart.contents.splice(0, cart.contents.length);
+ return JSON.stringify(cart, null, 4);
 };
 
 module.exports = {
   add,
   change,
   remove,
+  removeAll
 };

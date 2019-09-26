@@ -15,7 +15,7 @@ Vue.component('header-el',{
              </div>
              <div class="header__item">
                  <slot name="cart"></slot>
-                 <a href="cart.html" class="button">My account</a>
+                 <a href="/cart" class="button">My account</a>
              </div>
          </div>
      </header>

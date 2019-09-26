@@ -51,8 +51,8 @@ a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”<
           <nav class="footer__menu">
               <ul class="footer__menu__block">
                   <li><h4 class="footer__menu__title">COMPANY</h4></li>
-                  <li><a href="index.html" class="footer__menu__item">Home </a></li>
-                  <li><a href="#" class="footer__menu__item">Shop </a></li>
+                  <li><a href="/" class="footer__menu__item">Home </a></li>
+                  <li><a href="/catalog" class="footer__menu__item">Shop </a></li>
                   <li><a href="#" class="footer__menu__item">About </a></li>
                   <li><a href="#" class="footer__menu__item">How It Works </a></li>
                   <li><a href="#" class="footer__menu__item">Contact </a></li>
@@ -71,11 +71,11 @@ a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”<
           <nav class="footer__menu">
               <ul class="footer__menu__block">
                   <li><h4 class="footer__menu__title">SHOP CATEGORY</h4></li>
-                  <li><a href="catalog.html" class="footer__menu__item">Men </a></li>
-              <li><a href="catalog.html" class="footer__menu__item">Women </a></li>
-              <li><a href="catalog.html" class="footer__menu__item">Child </a></li>
-              <li><a href="catalog.html" class="footer__menu__item">Apparel </a></li>
-              <li><a href="catalog.html" class="footer__menu__item">Brows All </a></li>
+                  <li><a href="/catalog" class="footer__menu__item">Men </a></li>
+              <li><a href="/catalog" class="footer__menu__item">Women </a></li>
+              <li><a href="/catalog" class="footer__menu__item">Child </a></li>
+              <li><a href="/catalog" class="footer__menu__item">Apparel </a></li>
+              <li><a href="/catalog" class="footer__menu__item">Brows All </a></li>
               </ul>
           </nav>
       </div>
