@@ -55,14 +55,14 @@ Vue.component('catalog-product',{
 
   data(){
     return{
-
+      productUrl: '/product/',
     };
   },
 
   template: `
   <div class="fetured__item">
       <div class="fetured__img"> <img :src="img" alt=""></div>
-      <a href="single-product.html"><h4 class="fetured__item__title">{{product.product_name}}</h4></a>
+      <a :href="productUrl + product.id_product"><h4 class="fetured__item__title">{{product.product_name}}</h4></a>
       <p class="fetured__item__price">$ {{product.price}}</p>
 
          <div class="fetured_hover">

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Progect I-Shop</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/fbeb08ead3.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+
+    <header-el>
+      <filter-el slot="filter"></filter-el>
+      <cart slot="cart" ref="cart" :type=1></cart>
+    </header-el>
+
+      <nav-el></nav-el>
+      <div class="page-title__block">
+        <div class="container page__title">
+            <h1 class="page-title__h1">New Arrivals</h1>
+            <div class="breadcrumbs">
+                <a href="index.html" class="breadcrumbs__item">Home</a> / <a href="catalog.html" class="breadcrumbs__item">Men</a> / <a href="#" class="breadcrumbs__item_active">New Arrivals </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart container">
+        <cart slot="cart" ref="cart2" :type=2></cart>
+        
+    </div>
+
+      <footer-el></footer-el>
+
+  </div>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script type="text/javascript" src="js/NavComp.js"></script>
+  <script type="text/javascript" src="js/CartComp.js"></script>
+  <script type="text/javascript" src="js/FilterComp.js"></script>
+  <script type="text/javascript" src="js/HeaderComp.js"></script>
+  <script type="text/javascript" src="js/FooterComp.js"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

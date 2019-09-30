@@ -1,0 +1,1786 @@
+$primary-color: #f16d7f
+
+*
+  margin: 0
+  padding: 0
+
+
+body
+  font-family: 'Lato', sans-serif
+
+input
+  outline: none
+
+button
+  outline: none
+  cursor: pointer
+
+a
+  text-decoration: none
+
+.flex-between 
+  display: flex
+  justify-content: space-between
+
+
+.header 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+  border: 1px solid #ececec
+  background-color: #ffffff
+  height: 100px
+  &__item
+      display: flex
+      align-items: center
+
+
+  &__form
+    display: flex
+
+
+  &__browse
+    border-radius: 3px 0 0 3px
+    border: 1px solid #e6e6e6
+    background-color: #cdcdcc
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
+    padding: 14px 15px
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 0.35px
+    border-right: none
+    display: block
+    cursor: pointer
+    position: relative
+
+  &__browse__link
+    color: #222222
+
+  &__browse:hover .browse__menu
+    display: block
+
+  &Search__input
+    border: 1px solid #e6e6e6
+    background-color: #ffffff
+    color: #a4a4a4
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 0.35px
+    padding-left: 16px
+    padding-right: 16px
+    width: 249px
+
+
+  &Search__btn
+    background: transparent
+    width: 36px
+    color: #a4a4a4
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0.35px
+    border-radius: 0 3px 3px 0
+    border: 1px solid #e6e6e6
+    border-left: none
+    font-family: FontAwesome
+
+
+.container
+  width: 1140px
+  margin: 0 auto
+  height: 100%
+
+
+
+.logo 
+  color: #222222
+  font-size: 27px
+  font-weight: 300
+  text-transform: uppercase
+  letter-spacing: 0.68px
+  display: flex
+  align-items: center
+  margin-right: 37px
+
+
+  &_d
+    color: $primary-color
+    font-weight: 400
+
+
+  &__img
+    margin-right: 13px
+
+.cart__img 
+  margin-right: 26px
+.cart__menu 
+  border-radius: 5px
+  background-color: #ffffff
+  border: 1px solid #ececec
+  padding: 20px
+  position: absolute
+  top: 67px
+  left: 0px
+  display: none
+
+
+  &::before
+    content: ''
+    width: 10px
+    height: 10px
+    background: #fff
+    position: absolute
+    transform: rotate(45deg)
+    top: -6px
+    left: 30px
+    border-top: 1px solid #ececec
+    border-left: 1px solid #ececec
+
+  &__item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 16px
+    padding-top: 16px
+    border-bottom: 1px solid #ededed
+
+
+  &__item:first-of-type
+    padding-top: 0
+
+
+  &__img
+    padding-right: 15px
+
+
+  &__item__description
+    width: 75px
+
+
+  &_name
+    color: #222222
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0
+    &:hover
+      color: $primary-color
+
+
+.cart__drop__menu 
+  position: relative
+  padding: 20px 0 20px 20px
+
+
+  &:hover .cart__menu
+    display: block
+
+
+.cart__item_price 
+  color: $primary-color
+  font-size: 12px
+  font-weight: 400
+  text-transform: uppercase
+
+
+.rating 
+  font-size: 12px
+  font-weight: 400
+  text-transform: uppercase
+  display: flex
+  color: #e4af48
+  padding-top: 10px
+  padding-bottom: 10px
+
+
+.cart__button_delite 
+  color: #c0c0c0
+  font-size: 16px
+  font-weight: 400
+  text-transform: uppercase
+  display: block
+  padding-left: 40px
+
+.cart__button_checkout
+  height: 50px
+  border: 1px solid $primary-color
+  color: $primary-color
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  padding-left: 92px
+  padding-right: 92px
+  background-color: #ffffff
+  margin-bottom: 11px
+  cursor: pointer
+  transition: all 0.3s ease-in
+  &:hover
+    background-color: $primary-color
+    color: #ffffff
+
+
+.cart__button_go-to-cart
+  height: 50px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  color: #4a4a4a
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  padding-left: 87px
+  padding-right: 88px
+  cursor: pointer
+  transition: all 0.3s ease-in
+  &:hover
+    background-color: #4a4a4a
+    color: #ffffff
+
+
+.cart_total-price 
+  color: #222222
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+  display: flex
+  justify-content: space-between
+  padding-top: 20px
+  padding-bottom: 32px
+
+
+
+.button 
+  background-color: $primary-color
+  padding: 12px 19px
+  color: #ffffff
+  font-size: 15px
+  font-weight: 400
+  letter-spacing: 0.38px
+  transition: transform 0.2s ease-in
+  &:hover
+    transform: scale(1.02,1.02)
+
+.menu 
+  display: flex
+  list-style-type: none
+  height: 51px
+  justify-content: center
+  align-items: center
+
+
+  &__link
+    color: #222222
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    padding: 20px
+
+
+  &__link:hover
+    color: $primary-color
+
+
+.promo 
+  height: 613px
+  background-color: #e8e8e8
+
+
+  &__h3
+    color: #222222
+    font-size: 60px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 45px
+    margin-bottom: 15px
+
+
+  &__h4
+    color: #222222
+    font-size: 40px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 33px
+
+
+  &__text
+    border-left: 12px solid $primary-color
+    padding-left: 19px
+
+
+  &__h4_pink
+    color: $primary-color
+
+
+  &__content
+    height: 100%
+    display: flex
+    align-items: center
+    background-image: url(../img/promo-bg.jpg)
+    background-position: 0 -52px
+
+
+.offer
+  margin-top: 98px
+  &__item
+    width: 560px
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    display: block
+    background-position: bottom
+
+  &__item:first-of-type
+    margin-bottom: 20px
+
+
+  &__item_big
+    height: 542px
+
+  &__item_big:first-of-type
+    background-image: url(../img/offer-big1.jpg)
+
+  &__item_big:nth-child(2)
+    background-image: url(../img/offer-big-2.jpg)
+
+
+  &__item_mini
+    height: 261px
+
+  &__item_mini:first-of-type
+    background-image: url(../img/offer-small-2.jpg)
+
+  &__item_mini:nth-child(2)
+    background-image: url(../img/offer-small-1.jpg)
+
+
+  &__lable
+    padding: 16px 20px
+    margin: 0 auto
+    background-color: #ffffff
+    position: absolute
+    top: 26px
+    transition: transform 0.3s ease-in
+    &:hover
+      transform: translateX(20px)
+
+
+  &__h3
+    font-size: 18px
+    font-weight: 600
+    text-transform: uppercase
+    letter-spacing: 0.75px
+    color: #4a4a4a
+
+
+  &__h4
+    color: $primary-color
+    font-size: 30px
+    letter-spacing: 0.75px
+    text-transform: uppercase
+
+
+.fetured 
+  margin-top: 100px
+
+
+  &__title
+    text-align: center
+    margin-bottom: 59px
+
+
+  &__h3
+    font-size: 30px
+    font-weight: 700
+    letter-spacing: 0.75px
+
+
+  &__description
+    color: #9f9f9f
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0.35px
+
+
+  &__item
+    width: 261px
+    margin-bottom: 60px
+    position: relative
+
+  &__item:hover
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+
+  &__item:hover .fetured__item__button
+    visibility: visible
+
+
+  &__item:hover .fetured_hover
+    visibility: visible
+
+
+
+  &__content
+    flex-wrap: wrap
+
+
+  &__img
+    height: 279px
+    display: block
+
+
+  &__item__title
+    color: #222222
+    font-size: 13px
+    font-weight: 600
+    text-transform: uppercase
+    margin-left: 14px
+    margin-top: 19px
+
+
+  &__item__price
+    color: $primary-color
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-left: 14px
+    margin-top: 17px
+    margin-bottom: 21px
+
+
+  &__item__button
+    position: absolute
+    left: 70px
+    top: 98px
+    width: 123px
+    height: 39px
+    border: 1px solid #ffffff
+    display: flex
+    justify-content: space-around
+    align-items: center
+    visibility: hidden
+
+
+  &__item__button__text
+    color: #ffffff
+    font-size: 13px
+    font-weight: 700
+
+
+
+  &_hover
+    position: absolute
+    height: 279px
+    width: 100%
+    background-image: url(../img/fetured-hover-bg.png)
+    background-repeat: no-repeat
+    top: 0px
+    left: 0px
+    visibility: hidden
+
+
+  &__button
+    text-align: center
+
+.banner 
+  margin-top: 113px
+  display: flex
+  justify-content: center
+  margin-bottom: 97px
+
+
+  &__item
+    height: 529px
+
+
+  &__image
+    width: 767px
+    background-image: url(../img/banner-cover.png),url(../img/offer-banner.jpg)
+    background-repeat: no-repeat, no-repeat
+    background-size: cover,cover
+
+
+  &__conditions
+    width: 373px
+    background-color: #222224
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+
+  &__h3
+    color: #ffffff
+    font-size: 54px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 1.5px
+
+
+  &__h4
+    color: #ffffff
+    text-transform: uppercase
+    font-size: 32px
+    letter-spacing: 0.9px
+    font-weight: 700
+
+
+  &__h3_pink
+    color: $primary-color
+
+
+  &__image__text
+    margin-top: 146px
+    margin-left: 39px
+.conditions__item 
+  display: flex
+  width: 100%
+  align-items: flex-start
+
+
+.condition__h3 
+  color: #fbfbfb
+  font-size: 20px
+  font-weight: 700
+  letter-spacing: 0.5px
+  padding-left: 3px
+  margin-bottom: 17px
+
+
+.condition__p
+  color: #fbfbfb
+  font-size: 14px
+  font-weight: 300
+  letter-spacing: 0.35px
+
+
+.condition__item__description
+  padding-right: 43px
+
+
+.condition__image
+  width: 47px
+  padding-left: 36px
+  padding-right: 35px
+.subscribe 
+  width: 50%
+  height: 437px
+  border-left: 1px solid #ffffff
+
+  &-review__block
+    height: 437px
+    width: 100%
+    background-image: url(../img/subscribe-review-bg.jpg)
+    background-repeat: no-repeat
+    display: flex
+    background-size: cover
+
+  &__block
+    width: 386px
+    margin-left: 92px
+    margin-top: 148px
+    text-align: center
+
+
+  &__h3
+    color: #222224
+    font-weight: 600
+    font-size: 24px
+    letter-spacing: 0.6px
+    line-height: 24px
+    text-transform: uppercase
+    padding-bottom: 12px
+
+
+  &__h4
+    color: #222224
+    font-size: 14px
+    font-weight: 600
+    text-transform: uppercase
+    letter-spacing: 0.35px
+    line-height: 24px
+    margin-bottom: 35px
+
+
+  &__form
+    display: flex
+    justify-content: center
+    padding-top: 35px
+
+
+  &__input
+    width: 282px
+    border-radius: 23px 0px 0px 23px
+    background-color: #e1e1e1
+    height: 46px
+    border-color: transparent
+    padding-left: 28px
+    padding-right: 28px
+    color: #222224
+    font-size: 14px
+    font-weight: 400
+
+
+  &__button
+    width: 104px
+    height: 50px
+    border-radius: 0px 23px 23px 0px
+    background-color: $primary-color
+    color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    line-height: 47px
+    letter-spacing: 0.35px
+    cursor: pointer
+    border-color: transparent
+    transition: all 0.4s ease-in
+    &:hover
+      background-color: #fff
+      color: $primary-color
+
+
+
+
+.review 
+  width: 50%
+  height: 437px
+  display: flex
+  justify-content: flex-end
+
+
+  &__block
+    width: 500px
+    margin-top: 123px
+    display: flex
+    margin-right: 72px
+
+
+  &__photo
+    width: 83px
+    height: 83px
+    padding-right: 28px
+
+
+  &__content
+    color: #222224
+    font-size: 16px
+    font-style: italic
+    line-height: 26px
+    letter-spacing: 0.4px
+
+  &__text
+    width: 386px
+
+
+  &__dots
+    display: flex
+    justify-content: flex-start
+    margin-top: 41px
+
+
+  &__dot
+    margin-right: 13px
+
+.reviewer_name
+    color: $primary-color
+    font-size: 16px
+    font-weight: 700
+    letter-spacing: 0.4px
+    line-height: 26px
+
+
+.reviewer_location
+  color: #222224
+  font-size: 12px
+  font-weight: 300
+  letter-spacing: 0.3px
+  line-height: 14px
+
+
+
+.footer__logo 
+  margin-bottom: 41px
+
+
+.brand__content 
+  width: 427px
+
+
+.footer__text 
+  color: #898989
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+
+
+.footer_big 
+  display: flex
+  justify-content: space-between
+  padding-top: 123px
+  padding-bottom: 89px
+
+
+.footer__menu__block 
+  list-style-type: none
+
+
+.footer__menu__item 
+  color: #898989
+  font-size: 16px
+  font-weight: 400
+  letter-spacing: 0.4px
+  line-height: 42px
+
+
+.footer__menu__item:hover
+  color: $primary-color
+
+
+
+.footer__menu__title
+  color: $primary-color
+  font-size: 18px
+  font-weight: 700
+  line-height: 26px
+  text-transform: uppercase
+  line-height: 42px
+  padding-bottom: 30px
+
+
+.footer_small 
+  background-color: #e6e6e6
+
+
+.footer__small__block
+  display: flex
+  justify-content: space-between
+  padding-bottom: 23px
+  padding-top: 23px
+  align-items: center
+
+
+.copyright__text 
+  color: #7a7a7a
+  font-size: 16px
+  font-weight: 400
+  line-height: 42px
+
+
+.social__item 
+  width: 32px
+  height: 32px
+  display: block
+  background-color: #ffffff
+  text-align: center
+  margin-right: 8px
+  transition: all 0.3s ease-in
+
+
+  &:hover
+    background-color: $primary-color
+
+  &:hover .social__img
+    color: #ffffff
+
+
+.social__img 
+  margin: 9px auto
+  display: block
+  color: #b8b8b8
+  font-style: normal
+
+
+.social__block 
+  display: flex
+
+.drop 
+  border-radius: 5px
+  background-color: #ffffff
+  border: 1px solid #ececec
+  padding: 20px
+  position: absolute
+  top: 26px
+
+
+  &::before
+    content: ''
+    width: 10px
+    height: 10px
+    background: #fff
+    position: absolute
+    transform: rotate(45deg)
+    top: -6px
+    left: 30px
+    border-top: 1px solid #ececec
+    border-left: 1px solid #ececec
+
+
+  &__ul
+    list-style-type: none
+
+
+  &__link
+    text-decoration: none
+    color: #646464
+    font-size: 14px
+    font-weight: 400
+    line-height: 28px
+
+
+  &__link:hover
+    color: $primary-color
+
+
+  &__h3
+    color: #232323
+    font-size: 14px
+    font-weight: 600
+    text-transform: uppercase
+    border-bottom: 1px solid #e8e8e8
+    padding-bottom: 8px
+    padding-top: 37px
+
+  &__h3:first-of-type
+    padding-top: 0px
+
+
+  &__flex
+    width: 235px
+    margin-right: 46px
+
+
+  &__flex:last-of-type
+    margin-right: 0
+
+  &__mega-menu
+    display: none
+
+  &__image
+    margin-left: -20px
+    margin-top: 20px
+    width: 255px
+    height: 118px
+    background-image: url(../img/drop-menu-img.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    position: relative
+
+
+  &__image__name
+    width: 71px
+    height: 45px
+    color: #ffffff
+    font-size: 22px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.55px
+    position: absolute
+    bottom: 12px
+    right: 10px
+
+
+  &__browse
+    width: 242px
+
+
+
+.menu-drop__block 
+  position: relative
+
+  &:hover .drop__mega-menu
+    display: flex
+
+
+.browse__menu 
+  border-radius: 5px
+  background-color: #ffffff
+  border: 1px solid #ececec
+  padding: 20px
+  position: absolute
+  top: 45px
+  left: 0px
+  z-index: 100
+  display: none
+
+
+  &::before
+    content: ''
+    width: 10px
+    height: 10px
+    background: #fff
+    position: absolute
+    transform: rotate(45deg)
+    top: -6px
+    left: 64px
+    border-top: 1px solid #ececec
+    border-left: 1px solid #ececec
+
+.page__title 
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+
+.page-title__block
+  height: 148px
+  background-color: #f8f3f4
+
+
+.page-title__h1
+  color: $primary-color
+  font-size: 24px
+  font-weight: 400
+  line-height: 20px
+  text-transform: uppercase
+
+
+.breadcrumbs__item 
+  color: #636363
+  font-size: 14px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+  font-weight: 300
+
+
+  &_active
+    color: $primary-color
+    font-size: 14px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+    font-weight: 700
+
+.catalog__block
+  margin-top: 59px
+
+.catalog__menu_left 
+  width: 243px
+  margin-right: 50px
+
+
+.filter__item_left 
+  margin-bottom: 18px
+  &[open] > .filter__item_link::after
+    content: '\f0de'
+    color: #ef5b70
+
+
+.filter__list_left 
+  width: 243px
+  margin-right: 50px
+
+
+.filter__item_link 
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+  padding-left: 11px
+  position: relative
+  padding-top: 12px
+  padding-bottom: 15px
+  border-bottom: 1px solid #ebebeb
+  border-left: 5px solid #ef5b70
+  margin-bottom: 22px
+
+
+  &::-webkit-details-marker
+    display: none
+
+
+  &::after
+    content: '\f0dd'
+    padding-right: 0.5em
+    position: absolute
+    right: 0px
+    font-family: FontAwesome
+
+
+
+.filter__item-list 
+  list-style-type: none
+  padding-left: 22px
+
+
+  &__link
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+    line-height: 33px
+
+  &__link:hover
+    color: $primary-color
+
+
+.catalog__filter_center 
+  display: flex
+  justify-content: space-between
+
+
+.filter_center__item 
+  width: 263px
+  margin-right: 30px
+
+  &:last-of-type
+    margin-right: 0px
+
+
+.filter_center__title
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+
+.trending-filter__block 
+  padding-right: 85px
+  padding-top: 25px
+  font-size: 14px
+  font-weight: 400
+  color: #dfdfdf
+
+
+.trending-filter__item 
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 31px
+  &:hover
+    color: $primary-color
+
+.size-filter__item 
+  margin-right: 8px
+  margin-bottom: 13px
+
+
+.size-filter__label 
+  margin-right: 23px
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  text-transform: uppercase
+
+
+.size-filter__block 
+  margin-top: 25px
+
+.price-filter__progress 
+  margin-top: 25px
+  width: 100%
+
+
+
+.price-filer__values 
+  display: flex
+  justify-content: space-between
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  margin-top: 21px
+
+
+.sort__block 
+  margin-top: 40px
+  background-color: #f3f3f3
+  height: 50px
+  padding-left: 10px
+  display: flex
+  margin-bottom: 48px
+
+
+  &__form
+    margin-right: 10px
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.sort__button 
+  width: 66px
+  height: 30px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  text-align: center
+
+
+.sort__select 
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  height: 31px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  padding-left: 10px
+  padding-right: 10px
+  margin-left: -1px
+
+
+  &:first-of-type
+    width: 86px
+
+
+  &:nth-child(2)
+    width: 63px
+
+
+
+  &_arrow::after
+    content: '\f0dd'
+    font-family: FontAwesome
+    position: absolute
+    right: 8px
+    bottom: 8px
+    color: #6f6e6e
+
+
+  &_arrow
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.pagination__block 
+  height: 44px
+  padding-left: 15px
+  padding-right: 15px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 261px
+  border-radius: 3px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+
+
+.pagination__item 
+  color: #c4c4c4
+  font-size: 16px
+  font-weight: bold
+  line-height: 26px
+
+  &:hover
+    color: #ef5b70
+
+
+  &_active
+    color: #ef5b70
+
+.fetured__footer 
+  margin-bottom: 110px
+  display: flex
+  justify-content: space-between
+  width: 100%
+
+
+.view-all__button
+  width: 150px
+  height: 44px
+  border-radius: 3px
+  border: 1px solid $primary-color
+  background-color: #ffffff
+  color: $primary-color
+  font-size: 16px
+  font-weight: bold
+  line-height: 26px
+  transition: all 0.3s ease-in
+  &:hover
+    background-color: $primary-color
+    color: #ffffff
+
+
+
+.advantage__block 
+  height: 341px
+  background-color: #222224
+
+
+.advatage__list 
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+
+.advantage__item 
+  text-align: center
+  padding-left: 80px
+
+  &:first-of-type
+    padding-left: 0px
+
+
+.advantage__h3 
+  color: #fbfbfb
+  font-size: 20px
+  font-weight: 700
+  letter-spacing: 0.5px
+  margin-bottom: 17px
+
+
+.advantage__p 
+  color: #fbfbfb
+  font-size: 14px
+  font-weight: 300
+  line-height: 23.95px
+  letter-spacing: 0.35px
+
+
+.advantage__image 
+  margin-bottom: 32px
+
+.product-slider__block
+  width: 100%
+  border: 1px solid #eaeaea
+  height: 777px
+  background-color: #f7f7f7
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.product-slider__arrow
+  width: 47px
+  height: 47px
+
+.product-slider__image
+  height: 630px
+  padding-top: 11px
+
+.product-description
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  z-index: 100
+  margin-top: -73px
+  padding-top: 73px
+  padding-bottom: 122px
+  margin-bottom: 100px
+
+  &__content
+    width: 644px
+    margin: 0 auto
+    border-bottom: 1px solid #eaeaea
+
+  &__title
+    text-align: center
+    margin: 0 auto
+
+  &__h3
+    color: $primary-color
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    padding-bottom: 15px
+    margin: 0 auto 15px
+    width: fit-content
+    border: solid transparent
+    border-image: url("../img/underline.png") 0 0 3 0
+
+  &__h4
+    color: #4d4d4d
+    font-size: 18px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 67px
+
+  &__text
+    width: 618px
+    color: #5e5e5e
+    font-size: 14px
+    font-weight: 300
+    margin: 0 auto
+    text-align: center
+    line-height: 24px
+
+  &__params
+    display: flex
+    width: 340px
+    margin: 0 auto
+    justify-content: space-between
+    margin-top: 28px
+
+  &__param-name
+    color: #b9b9b9
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+  &__param-value
+    color: #2f2f2f
+    &:first-of-type
+      padding-right: 44px
+
+  &__price
+    width: 54px
+    color: $primary-color
+    margin: 0 auto
+    text-align: center
+    padding-top: 37px
+    padding-bottom: 43px
+    font-size: 24px
+    font-weight: 700
+    line-height: 24px
+
+  &__options
+      width: 538px
+      margin: 63px auto 0
+
+  &__options-container
+      display: flex
+      justify-content: space-between
+      margin-bottom: 28px
+  &__option-name
+      display: block
+      color: #2f2f2f
+      font-size: 14px
+      font-weight: 700
+      line-height: 24px
+      text-transform: uppercase
+  &__option
+    width: 144px
+    height: 35px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    position: relative
+    padding-left: 15px
+    color: #bcbcbc
+    font-size: 13px
+    font-weight: 400
+    line-height: 24px
+    text-transform: uppercase
+    border-radius: 0px
+    -webkit-appearance: none
+    -moz-appearance: none
+    -o-appearance: none
+    appearance: none
+    &::-webkit-color-swatch-wrapper
+      width: 17px
+      height: 20px
+      position: absolute
+      top: 6px
+      left: 10px
+      border-color: transparent
+      outline: none
+
+    &[type="color"]
+      position: relative
+      &::after
+        content: 'Red'
+        position: absolute
+        color: #bcbcbc
+        font-size: 13px
+        font-weight: 400
+        line-height: 24px
+        top: 4px
+        left: 37px
+
+    &::before
+      content: "\f107"
+      font-family: FontAwesome
+      color: #bcbcbc
+      font-size: 14px
+      font-weight: 400
+      position: absolute
+      right: 9px
+      padding-top: 7px
+  &__button
+    width: 100%
+    height: 55px
+    border: 1px solid $primary-color
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $primary-color
+    font-size: 16px
+    font-weight: 700
+    text-align: center
+    transition: transform 0.3s ease
+    &:hover
+      transform: scale(1.02,1.02)
+  &__cart-img
+    padding-right: 15px
+
+
+.additional-looks
+  margin-top: 19px
+  &__title
+    color: #4d4d4d
+    font-size: 24px
+    font-weight: 400
+    line-height: 20px
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 72px
+  &__item
+    width: 261px
+    margin-bottom: 60px
+    position: relative
+
+  &__item:hover
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+
+  &__item:hover .additional-looks__item-button
+    visibility: visible
+
+
+  &__item:hover .additional-looks_hover
+    visibility: visible
+
+
+
+  &__content
+    flex-wrap: wrap
+
+
+  &__img
+    height: 279px
+    display: block
+
+
+  &__item-title
+    color: #222222
+    font-size: 13px
+    font-weight: 600
+    text-transform: uppercase
+    margin-left: 14px
+    margin-top: 19px
+
+
+  &__item-price
+    color: $primary-color
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-left: 14px
+    margin-top: 17px
+    margin-bottom: 21px
+
+
+  &__item-button
+    position: absolute
+    left: 70px
+    top: 98px
+    width: 123px
+    height: 39px
+    border: 1px solid #ffffff
+    display: flex
+    justify-content: space-around
+    align-items: center
+    visibility: hidden
+
+
+  &__item-button-text
+    color: #ffffff
+    font-size: 13px
+    font-weight: 700
+
+
+
+  &_hover
+    position: absolute
+    height: 279px
+    width: 100%
+    background-image: url(../img/fetured-hover-bg.png)
+    background-repeat: no-repeat
+    top: 0px
+    left: 0px
+    visibility: hidden
+
+
+  &__button
+    text-align: center
+
+.cart
+  padding-top: 90px
+  &-font
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+    line-height: 20px
+  &__list
+    display: flex
+    flex-direction: column
+  &__item
+    display: flex
+    justify-content: space-between
+    padding-top: 22px
+    padding-bottom: 22px
+    border-bottom: 1px solid #eaeaea
+  &__table-titles
+    color: #222222
+    font-size: 13px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+    letter-spacing: -0.2px
+  &__product-details
+    width: 35%
+    display: flex
+    &-img
+      padding-right: 20px
+    &-title
+      color: #222222
+      font-size: 13px
+      font-weight: 400
+      text-transform: uppercase
+      padding-top: 13px
+      padding-bottom: 38px
+    &-params
+      color: #6f6e6e
+      font-size: 13px
+      font-weight: 300
+      line-height: 20px
+  &__unite-price
+    width: 13%
+    text-align: center
+  &__quantity-input
+    text-align: center
+    width: 54px
+    height: 30px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+  &__shipping
+    width: 13%
+    text-align: center
+  &__subtotal-price
+    width: 13%
+    text-align: center
+  &__action_del
+    width: 13%
+    text-align: center
+  &__icon_del
+    width: 15px
+    height: 15px
+    color: #c0c0c0
+    font-size: 16px
+    cursor: pointer
+    &:hover
+      color: $primary-color
+  &__buttons-block
+    border-color: transparent
+    &-item
+      display: block
+      width: 235px
+      padding-top: 18px
+      padding-bottom: 18px
+      border: 1px solid #eaeaea
+      text-align: center
+      text-transform: uppercase
+      color: #4a4a4a
+      font-size: 14px
+      font-weight: 700
+      transition: all 0.4s ease-in
+      &:hover
+        background-color: #4a4a4a
+        color: #ffffff
+  &__checkout
+    padding-top: 43px
+    padding-bottom: 79px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    &-item
+      width: 355px
+      padding-right: 35px
+      &:last-child
+        width: 360px
+    &-title
+      color: #222222
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+      padding-bottom: 22px
+    &-form-input
+      height: 45px
+      border: 1px solid #eaeaea
+      width: 319px
+      display: block
+      padding-left: 18px
+      padding-right: 18px
+      color: #b1b1b1
+      font-size: 13px
+      font-weight: 300
+      margin-bottom: 20px
+    &-form-button
+      height: 35px
+      border: 1px solid #eaeaea
+      padding-left: 15px
+      padding-right: 15px
+      color: #4a4a4a
+      font-size: 11px
+      font-weight: 700
+      text-transform: uppercase
+      cursor: pointer
+      transition: all 0.4s ease-in
+      &:hover
+        background-color: #4a4a4a
+        color: #ffffff
+    &-text
+      color: #000000
+      font-size: 14px
+      font-weight: 300
+      padding-top: 6px
+      padding-bottom: 24px
+    &-price
+      text-align: right
+      padding-bottom: 22px
+      border-bottom: 1px solid #e2e2e2
+
+    &-subtotal
+      color: #4a4a4a
+      font-size: 11px
+      font-weight: 400
+      text-transform: uppercase
+      padding-bottom: 14px
+    &-grandtotal
+      color: #222222
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+      &_pink
+        color: $primary-color
+        padding-left: 15px
+    &-subtotal_span
+      padding-left: 15px
+  &__total-checkout
+    background-color: #f5f3f3
+    padding: 42px
+  &__grandtotal-button
+    height: 50px
+    background-color: $primary-color
+    width: 100%
+    margin-top: 17px
+    color: #ffffff
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    cursor: pointer
+    transition: transform 0.3s ease-in
+    &:hover
+      transform: scale(1.02, 1.02)
+
+.checkout
+  padding-top: 56px
+  &__section
+    border-bottom: 1px solid #e8e8e8
+    &-title
+      color: #222222
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+      padding-top: 33px
+      padding-bottom: 33px
+
+
+      &::-webkit-details-marker
+        display: none
+    &-content
+      display: flex
+  &__role-choise
+    padding-left: 35px
+    padding-right: 264px
+  &__subtitle
+    color: #222222
+    font-size: 13px
+    font-weight: 700
+    text-transform: uppercase
+    padding-bottom: 15px
+  &__text
+    color: #b3b2b2
+    font-size: 13px
+    font-weight: 400
+    line-height: 20px
+    padding-bottom: 34px
+  &__role-form
+    margin-bottom: 33px
+  &__role-item
+    display: none
+
+  &__role-label
+    display: flex
+    align-items: center
+    padding-bottom: 22px
+    color: #222222
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+    &:last-of-type
+      padding-bottom: 33px
+    &::before
+      content: ""
+      display: inline-block
+      width: 15px
+      height: 15px
+      margin-right: 14px
+      border-radius: 12px
+      border: 2px solid #000
+  &__role-item:checked + .checkout__role-label::before
+    content: "\2022"
+    text-align: center
+    color: #000
+    font-size: 11px
+  &__advantages
+    padding-top: 11px
+    list-style-type: none
+    &-item
+      color: #b3b2b2
+      font-size: 13px
+      font-weight: 400
+      line-height: 20px
+      &::before
+        content: "\f101"
+        font-family: FontAwesome
+        color: #b3b2b2
+        font-size: 13px
+        font-weight: 400
+        padding-right: 4px
+  &__button
+    width: 180px
+    height: 50px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    margin-top: 38px
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 46px
+    transition: all 0.3s ease-in
+    &:hover
+      background-color: #4a4a4a
+      color: #ffffff
+  &__login-form
+    padding-bottom: 23px
+  &__login-label
+    display: block
+    color: #222222
+    font-size: 12px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+    padding-bottom: 16px
+  &__login_required
+      color: #ff0d0d
+      font-size: 13px
+      font-weight: 700
+      line-height: 20px
+
+  &__login-input
+    width: 390px
+    height: 45px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    padding-right: 15px
+    padding-left: 15px
+    &:last-of-type
+      margin-bottom: 22px
+  &__login-button-block
+    display: flex
+    align-items: center
+  &__forget-password
+    color: #222222
+    font-size: 14px
+    font-weight: 700
+    line-height: 20px
+    margin-left: 34px
